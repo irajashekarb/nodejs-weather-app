@@ -77,3 +77,8 @@ button {
     font-size: 20px;
     opacity: 60%;
 }
+
+#about-para {
+    font-family: Arial;
+    font-size: 15px;
+}
