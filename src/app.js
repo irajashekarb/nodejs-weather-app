@@ -6,6 +6,7 @@ const geocode = require('./utils/geocode')
 
 // Creating app variable to create a app
 const app = express()
+const port = process.env.PORT || 3000
 
 // Define paths for express configuration
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -84,8 +85,8 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Express server started at port 3000')
+app.listen(port, () => {
+    console.log('Express server started at port ' + port)
 })
 
 
